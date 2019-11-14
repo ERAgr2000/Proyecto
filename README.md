@@ -3,6 +3,6 @@
 # Integrantes:
 # Pablo
 # Elder
-# Estuardo
+# Eduardo
 # Donaldo
 # Coguox
