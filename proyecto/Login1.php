@@ -5,23 +5,28 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="Login1.css">
     <title>CUENTA teCuentoGT</title>
+
+    <link rel="icon" href="imgs/icon.png" type="image/gif" sizes="16x16">
 </head>
     
-<body background="vol.jpg">
+<body background="imgs/vol.jpg">
 
     <center>
-        <img src = "edificio.svg" style="width: 100px; height: 100px;"/>
+        <img src = "imgs/edificio.svg" style="width: 100px; height: 100px;"/>
     </center>
     <center>
         <h1>BIENVENIDO A teCuentoGT </h1><br>
         <strong>
             <?php
+
+            $name = $_GET['name'];
+            $apellido = $_GET['apellido'];
+            $email = $_GET['email'];
             
-             //ESTO NO CORRERA AL MOMENTO DE HACER UN LOGIN, FUNCIONARA SOLO AL CREAR REGISTRO, POR ESO MISMO SALDRA UN ERROR PERO UN USUARIO QUE HAYA PASADO POR EL REGISTRO NO VERA ESTE ERROR, POR LOGICA NO EXISTE TU NOMBRE SI NO TE HAS REGISTRADO, POR ESO MISMO SALE ERROR!
          
-                echo $_GET['name'] . (" ");
-                echo $_GET['apellido'];
-    
+                echo $name . (" ");
+                echo $apellido;
+
             ?></strong>
         
         <h3>Informate y da tu opinion sobre los hechos que ocurren día a día en el país de una manera entretenida.</h3>
@@ -30,7 +35,8 @@
         <h3>Tu nombre de usuario es: </h3><strong>
             <?php
                
-                    echo $_GET['username'];
+                    $username = $_GET['username'];
+                    echo $username;
                     
         ?>
         </strong>
@@ -39,7 +45,9 @@
         
         <h3>Tu contraseña es: </h3><strong>
             <?php 
-                echo $_GET['password'];
+
+                $pass = $_GET['password'];
+                echo $pass;
         ?>
         </strong>
         <br>
@@ -50,40 +58,15 @@
     
     <?php
     
-        $nombre = $_GET['name'];
 
-        $apellido =$_GET['apellido'];
+    include_once 'datab.inc.php';
     
-        $username =$_GET['username'];
-    
-        $password =$_GET['password'];
 
-        $email = $_GET['email'];
-    
-        $conexion = mysqli_connect("localhost","marktx","12345","usuarios");
-        
-        $ingreso = "INSERT INTO registro(Nombre, Apellido, username, passw, email)
-        
-        VALUES('" . $nombre . "','" . $apellido . "','" . $username . "','" . $password . "','" . $email . "')
-        ";
-        
-    
-    
-        $query = mysqli_query($conexion, $ingreso);
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    $obj = new Datab;
+    $obj->connect();
+
+
+
     ?>
     
 </body>

@@ -5,9 +5,10 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="reg.css">
     <title>REGISTRO teCuentoGT</title>
+    <link rel="icon" href="imgs/icon.png" type="image/gif" sizes="16x16">
 </head>
     
-<body background="fon.jpg">
+<body background="imgs/fon.jpg">
     <center>
         
     </center>
@@ -18,12 +19,12 @@
                 <tr>
                     <td>
                         <center>
-                        <img src = "edificio.svg" style="width: 60px; height: 60px;"/>
+                        <img src = "imgs/edificio.svg" style="width: 60px; height: 60px;"/>
                         <h3>BIENVENIDO A teCuentoGT</h3>
                         
                         <h4>Ingresa tus datos en los campos requeridos(*)</h4>
 
-                        <img src = "65251.png" style="width: 40px; height: 40px;"/>
+                        <img src = "imgs/65251.png" style="width: 30px; height: 30px;"/>
                     
                         <form action="Login1.php">
                             
@@ -45,9 +46,13 @@
                 					<input type="email" name="email" method="get"/required>
                 					<br><br>
                                     
-                                <br><label><input type="submit" name= "cc" value="Crear Cuenta"></label><br>
+                                <label><input type="submit" name= "cc" value="Crear Cuenta"></label><br>
+
                                 
                                 
+                            </form>
+                            <form action="Login.html">
+                                 <label><input type="submit" value="Regresar"></label>
                             </form>
                         </center>
                     </td>
