@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
+
+body{
+         
+            color: white;
+            border-radius: 15px;
+            margin-left: 550px;
+            margin-right: 550px;
+            margin-top: 30px;
+            margin-bottom: 60px;
+            font-family: 'Cabin', sans-serif;
+        }
+
+td{
+    background-color: #ffff;
+    padding-left: 60;   
+    padding-right: 60;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+h2{
+			color: white;
+			font-family: 'Cabin', sans-serif;
+			font-size: 250%;
+			text-align: center;
+			}
+form{
+            background-color: aliceblue
+			color: gray;
+			font-family: 'Cabin', sans-serif;		
+			}
+
+input{
+    font-family: 'Cabin', sans-serif;
+    border-radius: 3px;
+    border-style: solid;
+    
+}

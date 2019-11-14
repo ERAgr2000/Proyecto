@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
+body{
+            font-family: 'Cabin', sans-serif;
+            background-color: #AFB6B8;
+
+            border-radius: 15px;
+            margin-left: 500px;
+            margin-right: 500px;
+            margin-top: 30px;
+            margin-bottom: 60px;
+
+            
+        }
+
+td{
+    background-color: #ffff;
+    padding-left:40;   
+    padding-right: 40;
+    border-radius: 10px;
+    padding-top: 15px;
+}
+h1{
+    color: black;
+    font-family: 'Cabin', sans-serif;
+}
+h3{
+    color: black;
+    font-family: 'Cabin', sans-serif;
+}
+h4{
+    color: black;
+    font-family: 'Cabin', sans-serif;
+}
+
+input{
+    font-family: 'Cabin', sans-serif;
+    border-radius: 3px;
+    border-style: solid;
+    
+}
+
